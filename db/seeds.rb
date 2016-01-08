@@ -53,7 +53,7 @@ todo_lists = [fiorinas_todo_list, trumps_todo_list, carsons_todo_list, hillarys_
 
 todo_lists.each do |list|
   first_name = list.user.profile.first_name
-	5.times do |i|
+  5.times do |i|
     list.todo_items.create!({
       due_date: one_year_from_today, 
       title: "#{first_name} item #{i+1}", 
